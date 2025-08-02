@@ -3,7 +3,7 @@ from bpy.utils import resource_path
 from pathlib import Path
 
 USER = Path(resource_path('USER'))
-src = USER / "scripts/addons" / "J.CURVES"
+src = USER / "scripts/addons" / "J_CURVES"
 
 file_path = src / "blendfile" / "J_Curves Geometry Nodes.blend"
 inner_path = "NodeTree"
@@ -57,3 +57,4 @@ register, unregister = bpy.utils.register_classes_factory(
 
 if __name__ == "__main__":
     register()
+
