@@ -1,8 +1,8 @@
 bl_info = {
     "name": "J.CURVES",
     "author": "J.STILL",
-    "version": (1, 0, 1),
-    "blender": (4, 5, 1),
+    "version": (1, 0, 0),
+    "blender": (4, 5, 0),
     "location": "View3D > J.CURVES",
     "warning": "",
     "doc_url": "https://github.com/JST1LL/JCURVES",
@@ -10,13 +10,16 @@ bl_info = {
 }
 
 import bpy
-
-from .jcurves import CURVE_OT_ADDJCURVE, JCurves
+from . import jcurves
+from . import bake_panel
 
 def register():
-    bpy.utils.register_class(CURVE_OT_ADDJCURVE)
-    bpy.utils.register_class(JCurves)
-    
+    jcurves.register()
+    bake_panel.register()
+
 def unregister():
-    bpy.utils.unregister_class(CURVE_OT_ADDJCURVE)
-    bpy.utils.unregister_class(JCurves)
+    jcurves.unregister()
+    bake_panel.unregister()
+
+if __name__ == "__main__":
+    register()
