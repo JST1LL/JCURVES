@@ -1,11 +1,11 @@
 bl_info = {
     "name": "J.CURVES",
     "author": "J.STILL",
-    "version": (0, 1),
+    "version": (1, 0, 1),
     "blender": (4, 5, 1),
     "location": "View3D > J.CURVES",
     "warning": "",
-    "doc_url": "https://x.com/jst2ll",
+    "doc_url": "https://github.com/JST1LL/JCURVES",
     "category": "Curves"
 }
 
