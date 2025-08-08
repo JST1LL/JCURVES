@@ -1,7 +1,7 @@
 schema_version = "1.0.0"
 
 id = "j_curves"
-version = "1.0.0"
+version = "1.0.1"
 name = "J.CURVES"
 tagline = "Simplify curve workflow for stylized and hair-cards hair"
 maintainer = "J.STILL"
